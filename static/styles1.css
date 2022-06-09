@@ -1,0 +1,203 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{ 
+            background: rgb(2,0,36);
+background: linear-gradient(149deg, rgba(2,0,36,1) 0%, rgba(70,86,165,1) 59%, rgba(161,172,224,1) 100%);
+            color: rgb(255, 255, 255);
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: larger;}
+        nav ul{
+            background-color: rgb(74, 91, 168);
+            color: rgb(209, 213, 230); 
+            border-color: linear-gradient(90deg, rgba(255,255,255,1) 9%, rgba(106,117,154,1) 100%);
+            border-style: solid;
+            border-width: 5px;
+            padding: 10px;
+              
+        }
+        nav ul li{
+            list-style-type: none;
+            display:inline;
+            color: rgb(207, 213, 238); 
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+        nav ul li a{
+            color: rgb(207, 213, 238); 
+            text-decoration: none;
+        }
+ 
+.button{
+background-color: rgb(74, 91, 168);
+padding: 15px 45px;
+text-align:center ;
+display: inline-block ;
+font-size: 20px ;
+margin-left:10px;
+}
+.button > a {
+text-decoration: none;
+color:rgb(57, 83, 153) ;
+}
+
+ .center{
+    background-color:rgb(224, 238, 250);
+    
+}  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.btn-animation-3d-hover-effect {
+
+position: relative;
+
+outline: none;
+
+text-decoration: none;
+
+border-radius: 50px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+cursor: pointer;
+
+text-transform: uppercase;
+
+height: 60px;
+
+width: 210px;
+
+opacity: 1;
+
+background-color: rgb(0, 92, 121);
+
+border: 2px solid #ffffff;
+
+}
+
+ 
+
+.btn-animation-3d-hover-effect span {
+
+color: #ebebeb;
+
+font-size: 15px;
+
+font-weight: 1000;
+
+letter-spacing: 0.7px;
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+ 
+
+.btn-animation-3d-hover-effect:hover {
+
+animation: rotate 0.7s ease-in-out both;
+
+}
+
+ 
+
+.btn-animation-3d-hover-effect:hover span {
+
+animation: storm 0.7s ease-in-out both;
+
+animation-delay: 0.06s;
+
+}
+
+ 
+
+@keyframes rotate {
+
+0% {
+
+transform: rotate(0deg) translate3d(0, 0, 0);
+
+}
+
+ 
+
+25% {
+
+transform: rotate(3deg) translate3d(0, 0, 0);
+
+}
+
+ 
+
+50% {
+
+transform: rotate(-3deg) translate3d(0, 0, 0);
+
+}
+
+ 
+
+75% {
+
+transform: rotate(1deg) translate3d(0, 0, 0);
+
+}
+
+ 
+
+100% {
+
+transform: rotate(0deg) translate3d(0, 0, 0);
+
+}
+
+}
+
+ 
+
+@keyframes storm {
+
+0% {
+
+transform: translate3d(0, 0, 0) translateZ(0);
+
+}
+
+ 
+
+25% {
+
+transform: translate3d(4px, 0, 0) translateZ(0);
+
+}
+
+ 
+
+50% {
+
+transform: translate3d(-3px, 0, 0) translateZ(0);
+
+}
+
+ 
+
+75% {
+
+transform: translate3d(2px, 0, 0) translateZ(0);
+
+}
+
+ 
+
+100% {
+
+transform: translate3d(0, 0, 0) translateZ(0);
+
+}
+
+}

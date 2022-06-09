@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Planner - </title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+    <link rel="stylesheet" href="../static/styles2.css">
+    <link rel="stylesheet" href="../static/styles3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../static/p-planner_logo.JPG" alt="logo" width="35%">
+                <span>P-Planner - My Tasks
+                </span>
+            </div>
+            
+        <ul>
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">Home</button></a>
+        </div>
+    
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">➡ Plan ⬅</button></a>
+        </div>
+    
+    
+            <div class="dropdown">
+                <a href="/signup" ><button class="dropbtn">Sign Up</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="/login" ><button class="dropbtn">Log In</button></a>
+            </div>
+            <div class="dropdown1">
+                <a href="/aboutme" ><button class="dropbtn">About</button></a>
+            </div>
+            
+        </ul>
+        
+        </nav>
+       </header> 
+  
+
+
+        
+      
+   <h1>Create Task</h1>
+ 
+   <form action="/add_task" method="POST">
+    <h3>Add a task here</h3>
+    <br>
+    <br>
+    <label for="task_name">
+        Task Name:
+        <input type="text" id="task_name" name="task_name">
+    </label>
+    <br>
+    <br>
+    <label for="priority">
+        Priority:
+        <input type="text" id="priority" name="priority">
+    </label>
+    <br>
+    <br>
+    <label for="status">
+        Status:
+        <input type="text" id="status" name="status">
+    </label>
+<br>
+<br>
+   <button class="dropbtn" type="submit" name="submit" id="submit">Add task</button>
+</form>
+   <br>
+   <br>
+  
+   
+</body>
+</html>

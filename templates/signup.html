@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+    <link rel="stylesheet" href="../static/styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../static/p-planner_logo.JPG" alt="logo" width="35%">
+                <span>P-Planner - Sign Up
+                </span>
+            </div>
+            
+        <ul>
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">Home</button></a>
+        </div>
+    
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">➡ Plan ⬅</button></a>
+        </div>
+    
+    
+            <div class="dropdown">
+                <a href="/signup" ><button class="dropbtn">Sign Up</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="/login" ><button class="dropbtn">Log In</button></a>
+            </div>
+            <div class="dropdown1">
+                <a href="/aboutme" ><button class="dropbtn">About</button></a>
+            </div>
+            
+        </ul>
+        
+        </nav>
+       </header> 
+   <br>
+   <br>
+    <div class="mainpart">
+ 
+    <h1>Sign up</h1>
+    <br>
+    <p> Create a P-Planner account to save your planning permanently <br> and receive special tips and tricks.<br> It's free!</p>
+    <br>
+    <form action="/signup_user" method="POST">
+    <br>
+    <br>
+    <label for="username">
+        Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="username" name="username" required>
+    </label>
+    <br>
+    <br>
+    <label for="password">
+         Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="password" name="password" required>
+    </label>
+    <br>
+    <br>
+    <label for="confirmpassword">
+        Confirm password: &nbsp; &nbsp;
+        <input type="password" id="confirmpassword" name="confirmpassword" required>
+    </label>
+    <br>
+    <br>
+    <label for="email">
+         E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email">
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button" type= "submit"> Sign Up </button>
+    </form>
+    </div>
+   <br>
+   <br>
+  
+   
+</body>
+</html>

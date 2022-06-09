@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Planner - </title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+    <link rel="stylesheet" href="../static/styles2.css">
+    <link rel="stylesheet" href="../static/styles3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../static/p-planner_logo.JPG" alt="logo" width="35%">
+                <span>P-Planner - My Tasks
+                </span>
+            </div>
+            
+        <ul>
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">Home</button></a>
+        </div>
+    
+        <div class="dropdown">
+            <a href="/" ><button class="dropbtn">➡ Plan ⬅</button></a>
+        </div>
+    
+    
+            <div class="dropdown">
+                <a href="/signup" ><button class="dropbtn">Sign Up</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="/login" ><button class="dropbtn">Log In</button></a>
+            </div>
+            <div class="dropdown1">
+                <a href="/aboutme" ><button class="dropbtn">About</button></a>
+            </div>
+            
+        </ul>
+        
+        </nav>
+       </header> 
+
+  <div class="tbl">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <table>
+          <tr>
+             <th>Task Name</th>
+             <th>Priority</th>
+             <th>Status</th>
+             <th>Controls</th>
+          </tr>
+            {% for record in records: %}
+          <tr>
+            <td>{{record["task_name"]}}</td>
+            <td>{{record["priority"]}}</td>
+            <td>{{record["status"]}}</td>
+            <td> <button class="deletebutton" type="submit" name="submit" id="submit">
+                <a href="/deletetodo?id={{record["id"]}}">Delete</a> 
+           </button></td>    
+          </tr>
+          {% endfor %}
+      </table>
+  </div>
+
+        
+      
+   
+   
+</body>
+</html>

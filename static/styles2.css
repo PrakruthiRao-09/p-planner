@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   
+}
+    
+nav{
+   background-color: rgb(255,255,255);
+   color:rgb(0, 0, 0);
+   font-family:'Poppins', sans-serif;
+   position:relative;
+   height:80px;
+}
+nav > div > ul
+
+{
+   display:grid;
+   grid-gap:30px;
+   grid-template-columns: 150px 150px 150px 150px 150px;
+   position:absolute;
+   list-style-type: none;
+   align-items: center;
+   right: 100px;
+   top: 0;
+   height: 80px;
+}
+nav > div > ul > a > li
+{
+   color:#ffffff;
+   text-decoration:none;
+   text-align:center;
+}
+nav > div
+{
+   display:inline-block;
+}
+nav > div > ul > a > li > select
+{
+   background-color: rgb(255,255,255);
+   border: none;
+   color:#ffffff;
+}
+nav > .logo{
+   position: absolute;
+   top:50%;
+   left:-70px;
+   width:250px;
+   transform: translateY(-50%);
+}
+nav > .logo > span{
+   position:absolute;
+   top:50%;
+   transform: translateY(-50%);
+   right:-120px;
+}
+.dropdown{
+   position:relative;
+   display:inline-block;
+   right:-10px;
+}
+.dropdown1{
+   position:relative;
+   display:inline-block;
+   right:-480px;
+}
+.dropbtn{
+   background-color: #22a3a5;
+   color:#ffffff;
+   padding:10px;
+   border:none;
+   font-family:'Poppins', sans-serif;
+   font-size:23px
+}
+.dropdowncontent{
+   position:absolute;
+   display:none;
+   min-width:170px;
+z-index: 1;
+}
+.dropdowncontent a{
+   background-color: #73ced0;
+   display:block;
+   text-decoration:none;
+   color:#ffffff;
+
+}
+.dropdowncontent a:hover{
+background-color:#0080a0;
+
+}
+.dropdown:hover .dropdowncontent{
+display:block;
+}
+.deletebutton{
+   background-color: #ca4938;
+   color:#ffffff;
+   padding:10px;
+   border:none;
+   font-family:'Poppins', sans-serif;
+   font-size:23px
+}
+
+.deletebutton a{
+   text-decoration: none;
+   color:white;
+}
